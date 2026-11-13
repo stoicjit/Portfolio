@@ -12,9 +12,8 @@ One site only (no separate brand site).
 - Do not add dependencies without asking first and explaining why.
 
 ## Site structure
-- Homepage (single scroll): Hero -> Featured projects (cards) -> About -> Contact -> Footer
+- Homepage (single scroll): Hero -> Featured projects (cards) -> Experience -> About -> Contact -> Footer
 - One dedicated case study page per featured project: `/projects/[slug]`
-- Homepage (single scroll): Hero -> Featured projects -> Experience -> About -> Contact -> Footer
 - CV downloadable from `/public/cv.pdf`
 
 ## Featured projects

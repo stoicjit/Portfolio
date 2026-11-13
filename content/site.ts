@@ -8,6 +8,7 @@ export const siteContent = {
   sections: [
     { id: "hero", title: "TODO: Hero", description: "TODO: Add a short introduction." },
     { id: "projects", title: "TODO: Projects", description: "TODO: Featured projects will go here." },
+    { id: "experience", title: "TODO: Experience", description: "TODO: Add your work experience." },
     { id: "about", title: "TODO: About", description: "TODO: Add a brief overview about you." },
     { id: "contact", title: "TODO: Contact", description: "TODO: Add your preferred contact details." },
   ],

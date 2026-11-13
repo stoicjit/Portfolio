@@ -1,6 +1,7 @@
 import { siteContent } from "@/content/site";
 import { projectContent } from "@/content/projects";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 
 export default function Home() {
   return (
@@ -25,6 +26,13 @@ export default function Home() {
                 {projectContent.projects.map((project) => (
                   <ProjectCard key={project.slug} project={project} />
                 ))}
+              </div>
+            </>
+          ) : section.id === "experience" ? (
+            <>
+              <p className="max-w-2xl text-muted">{section.description}</p>
+              <div className="pt-space-3">
+                <ExperienceTimeline />
               </div>
             </>
           ) : (
