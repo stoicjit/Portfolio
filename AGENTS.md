@@ -72,7 +72,7 @@ Problem -> My role -> Stack -> How it works (architecture) -> Challenges and sol
 - The owner must be able to explain every part of this code in an interview, so prefer clear and conventional solutions over clever ones.
 
 ## Build order
-Current layer: 1b (update this line as we progress)
+Current layer: 2
 
 **Layer 1: Foundation (done)**
 Design tokens, global layout, fonts, header/footer, homepage skeleton.

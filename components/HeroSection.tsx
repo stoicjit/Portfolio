@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section id="hero" aria-labelledby="hero-title" className="grid flex-1 items-center gap-x-12 gap-y-section py-section md:grid-cols-[minmax(0,1.15fr)_minmax(16rem,0.75fr)]">
       <div className="flex flex-col items-start gap-5">
-        <p className="text-small font-medium uppercase tracking-wide text-accent">{siteContent.role}</p>
+        <p className="text-small font-medium text-accent">{siteContent.role}</p>
         <h1 id="hero-title" className="font-serif text-display leading-tight text-ink">{siteContent.name}</h1>
         <p className="max-w-prose text-lg leading-relaxed text-muted">{siteContent.introduction}</p>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-3">

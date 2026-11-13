@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
-import { PathTimeline } from "@/components/PathTimeline";
+import { ExperienceEntry } from "@/components/ExperienceEntry";
 import { ProjectList } from "@/components/ProjectList";
-import { pathContent } from "@/content/en/path";
+import { experienceContent } from "@/content/en/experience";
 import { projectContent } from "@/content/en/projects";
 import { siteContent } from "@/content/en/site";
 
@@ -16,7 +16,9 @@ export default function Home() {
           </h2>
           <p className="mt-4 max-w-prose leading-relaxed text-muted">{section.description}</p>
           {section.id === "selected-work" && <ProjectList projects={projectContent.projects} />}
-          {section.id === "path" && <PathTimeline entries={pathContent.entries} />}
+          {section.id === "experience" && experienceContent.entries.map((experience) => (
+            <ExperienceEntry key={`${experience.company}-${experience.role}`} experience={experience} />
+          ))}
         </section>
       ))}
     </main>

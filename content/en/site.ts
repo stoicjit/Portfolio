@@ -7,8 +7,9 @@ export const siteContent = {
   navigation: [
     { label: "Selected work", href: "#selected-work" },
     { label: "About", href: "#about" },
-    { label: "Path", href: "#path" },
+    { label: "Experience", href: "#experience" },
     { label: "Contact", href: "#contact" },
+    { label: "Download CV", href: "/cv.pdf", download: true },
   ],
   skipToContent: "Skip to content",
   navigationLabel: "Main navigation",
@@ -16,7 +17,7 @@ export const siteContent = {
   sections: [
     { id: "selected-work", title: "Selected work", description: "TODO: Add a short introduction to your projects." },
     { id: "about", title: "About", description: "TODO: Add a brief overview about you." },
-    { id: "path", title: "Path", description: "TODO: Add a short introduction to your path." },
+    { id: "experience", title: "Experience", description: "TODO: Add a short introduction to your experience." },
     { id: "contact", title: "Contact", description: "TODO: Add your preferred contact details." },
   ],
   footer: "TODO: Add a short footer note.",
