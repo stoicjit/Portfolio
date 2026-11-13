@@ -13,6 +13,7 @@ export const siteContent = {
   ],
   skipToContent: "Skip to content",
   navigationLabel: "Main navigation",
+  menuLabels: { open: "Open menu", close: "Close menu" },
   portrait: { alt: "TODO: Describe your portrait", placeholder: "TODO: Add portrait" },
   sections: [
     { id: "selected-work", title: "Selected work", description: "TODO: Add a short introduction to your projects." },
