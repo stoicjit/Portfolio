@@ -39,6 +39,10 @@
   --text-heading--line-height: 1.25;
   --text-heading-wide: 1.875rem;
   --text-heading-wide--line-height: 1.25;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-card-title: 1.125rem;
+  --text-card-title--line-height: 1.4;
 }
 
 * {

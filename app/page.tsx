@@ -1,4 +1,6 @@
 import { siteContent } from "@/content/site";
+import { projectContent } from "@/content/projects";
+import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -16,7 +18,18 @@ export default function Home() {
           >
             {section.title}
           </h1>
-          <p className="max-w-2xl text-muted">{section.description}</p>
+          {section.id === "projects" ? (
+            <>
+              <p className="max-w-2xl text-muted">{section.description}</p>
+              <div className="grid grid-cols-1 gap-space-4 pt-space-3 md:grid-cols-2 lg:grid-cols-3">
+                {projectContent.projects.map((project) => (
+                  <ProjectCard key={project.slug} project={project} />
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="max-w-2xl text-muted">{section.description}</p>
+          )}
         </section>
       ))}
     </main>

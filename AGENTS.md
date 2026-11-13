@@ -14,6 +14,7 @@ One site only (no separate brand site).
 ## Site structure
 - Homepage (single scroll): Hero -> Featured projects (cards) -> About -> Contact -> Footer
 - One dedicated case study page per featured project: `/projects/[slug]`
+- Homepage (single scroll): Hero -> Featured projects -> Experience -> About -> Contact -> Footer
 - CV downloadable from `/public/cv.pdf`
 
 ## Featured projects
@@ -68,6 +69,8 @@ Design tokens, global layout, fonts, header/footer, homepage skeleton.
 - Typed `Project` data in `/content/projects.ts` and a reusable `ProjectCard` component
 - Hero, About, Contact sections with real content
 - CV download link (`/public/cv.pdf`) and social links (GitHub, LinkedIn, email)
+- Typed `Experience` data in `/content/experience.ts` and an Experience timeline section
+  (role, company, dates, short description, 3-4 accomplishment bullets, tech tags)
 
 **Layer 3: Case study pages**
 - `/projects/[slug]` pages following the case study structure above
