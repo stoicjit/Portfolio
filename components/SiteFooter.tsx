@@ -1,9 +1,9 @@
-import { siteContent } from "@/content/site";
+import { siteContent } from "@/content/en/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-border">
-      <div className="mx-auto w-full max-w-6xl px-space-4 py-space-5 text-sm text-muted sm:px-space-6">
+    <footer>
+      <div className="mx-auto w-full max-w-page px-6 py-8 text-small text-muted sm:px-10">
         {siteContent.footer}
       </div>
     </footer>
