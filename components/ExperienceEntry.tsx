@@ -25,7 +25,7 @@ export function ExperienceEntry({ experience }: ExperienceEntryProps) {
         ))}
       </ul>
       <ul aria-label={`${experience.role}: ${experienceContent.technologiesLabel}`} className="flex flex-wrap gap-x-3 gap-y-1 text-small text-muted">
-        {experience.techTags.map((tag) => <li key={tag}>{tag}</li>)}
+        {experience.techTags.map((tag, index) => <li key={`${tag}-${index}`}>{tag}</li>)}
       </ul>
     </article>
   );

@@ -29,7 +29,7 @@ Side mention only (About or a "How I work" blurb): "second brain" (Claude + Obsi
 ## Project presentation
 - Homepage: borderless project rows (large screenshot, title, one-liner, tech tags). No cards.
 - Each row expands inline (a real `<button>` with `aria-expanded`, one open at a time) to show: problem (1-2 sentences), role, key stack, one concrete highlight, then links: Read case study, Live, GitHub.
-- Project data therefore needs a short `summary` block in addition to the full `caseStudy` fields.
+- Project data uses `description` for row copy and the full `caseStudy` fields for inline expansion.
 
 ## Case study structure (each project)
 Problem -> My role -> Stack -> How it works (architecture) -> Challenges and solutions -> What I learned / would improve -> Screenshots or video -> Live + GitHub links.
@@ -85,7 +85,7 @@ Design tokens, global layout, fonts, header/footer, homepage skeleton.
 - Review `next.config.ts` and `package.json`: use the standard documented Tailwind + Next setup unless an experimental option is justified.
 
 **Layer 2: Core content**
-- Typed `Project` data (with `summary` for the inline expand) and a reusable borderless project row component
+- Typed `Project` data and a reusable borderless project row component with inline expansion
 - Hero, About, Experience, Contact with real content
 - CV download link and social links (GitHub, LinkedIn, email)
 
