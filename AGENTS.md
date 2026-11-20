@@ -72,7 +72,7 @@ Problem -> My role -> Stack -> How it works (architecture) -> Challenges and sol
 - The owner must be able to explain every part of this code in an interview, so prefer clear and conventional solutions over clever ones.
 
 ## Build order
-Current layer: 2
+Current layer: 3
 
 **Layer 1: Foundation (done)**
 Design tokens, global layout, fonts, header/footer, homepage skeleton.
@@ -80,18 +80,17 @@ Design tokens, global layout, fonts, header/footer, homepage skeleton.
 **Layer 1b: Realignment (do first)**
 - Replace default grey/Geist tokens with the palette and fonts above; add accent, serif, dark values, container and section-spacing tokens.
 - Remove borders and card styling; one `<h1>`; real hero (name, role, one-liner, CTAs, status line, portrait placeholder); skip link; focus styles; reduced-motion rule.
-- Replace the Experience timeline component with a simple single-entry layout (see Site structure), placed after Selected work. Restyle the project list as borderless rows; do not build the inline expand yet.
+- Replace the Experience timeline component with a simple single-entry layout (see Site structure), placed after Selected work. Restyle the project list as borderless rows.
 - Restructure content into `content/en/` and add `/en` routing so French can be added later.
 - Review `next.config.ts` and `package.json`: use the standard documented Tailwind + Next setup unless an experimental option is justified.
 
 **Layer 2: Core content**
-- Typed `Project` data and a reusable borderless project row component with inline expansion
+- Typed `Project` data and reusable borderless project rows; inline expansion shows role and key stack with case-study, live, and GitHub links
 - Hero, About, Experience, Contact with real content
 - CV download link and social links (GitHub, LinkedIn, email)
 
 **Layer 3: Case study pages**
-- `/projects/[slug]` pages following the case study structure above
-- One project at a time, starting with the wedding photo-sharing PWA
+- `/[locale]/projects/[slug]` pages following the case study structure above
 
 **Layer 4: Quality pass**
 Responsive check, accessibility, SEO and social preview image, dark mode, Lighthouse 90+, link check.

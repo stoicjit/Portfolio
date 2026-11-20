@@ -5,7 +5,9 @@ import { experienceContent } from "@/content/en/experience";
 import { projectContent } from "@/content/en/projects";
 import { siteContent } from "@/content/en/site";
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+
   return (
     <main id="main-content" className="mx-auto flex w-full max-w-page flex-1 flex-col px-6 sm:px-10">
       <HeroSection />
@@ -15,7 +17,7 @@ export default function Home() {
             {section.title}
           </h2>
           <p className="mt-4 max-w-prose leading-relaxed text-muted">{section.description}</p>
-          {section.id === "selected-work" && <ProjectList projects={projectContent.projects} />}
+          {section.id === "selected-work" && <ProjectList locale={locale} projects={projectContent.projects} />}
           {section.id === "experience" && experienceContent.entries.map((experience) => (
             <ExperienceEntry key={`${experience.company}-${experience.role}`} experience={experience} />
           ))}
