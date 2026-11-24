@@ -56,6 +56,13 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
+  cursor: url("/cursor.svg") 1 1, auto;
+}
+
+a,
+button,
+[role="button"] {
+  cursor: url("/cursor-pointer.svg") 8 2, pointer;
 }
 
 a:focus-visible,
